@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header class="main-header">
+    <header class="main-header container">
         <!-- логотип сайта с размерами img/index-logo.svg-->
         <a class="main-header-logo" href="index.html">
             <img src="http://via.placeholder.com/160x65" width="160" height="65" alt="Логотип web-студии «Nerd's»">
@@ -40,59 +40,76 @@
         </a>
     </header>
     <!-- Шапка сайта -->
-    <div >
+    
+    <!--слайд-шоу-->
+    <section class="slideshow">
+      <!--Для читалок-->
+      <!--<h2 class="visually-hidden">Слайд-шоу</h2>-->
+      
+      <div class="slideshow__item">
+      <!--src= "img/slideshow-1.jpg"-->
+        <div class="slideshow__slides">
+          <div class="slideshow__slides-item">
+            <div class="left-column">
+              <p class="slideshow-name"><h3>Долго, дорого, скрупулезно.</h3></p>
+              <p class="slideshow-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <p><a class="slideshow-button" href="#">УЗНАТЬ БОЛЬШЕ</a></p>
+            </div>  
+            <div class="right-column">
+              <img src="http://via.placeholder.com/698x413" width="698" height="413" alt="Долго, дорого, скрупулезно">
+            </div>
+          </div>
+        </div>
+      <!--src= "img/slideshow-2.jpg"-->
+        <div class="slideshow__slides">
+          <div class="slideshow__slides-item">
+            <div class="left-column"> 
+              <p class="slideshow-name"><h3>Любим математику как никто другой</h3></p>
+              <p class="slideshow-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <p><a class="slideshow-button" href="#">УЗНАТЬ БОЛЬШЕ</a></p>
+            </div>
+            <div class="right-column">
+              <img src="http://via.placeholder.com/698x413" width="698" height="413" alt="Любим математику как никто другой">
+            </div>
+          </div>
+        </div>
+      
+      <!--src= "img/slideshow-3.jpg"-->
+        <div class="slideshow__slides">
+          <div class="slideshow__slides-item">            
+            <div class="left-column"> 
+              <p class="slideshow-name"><h3>Только ночь, только хардкор</h3></p>
+              <p class="slideshow-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <p><a class="slideshow-button" href="#">УЗНАТЬ БОЛЬШЕ</a></p>
+            </div>
+            <div class="right-column">
+              <img src="http://via.placeholder.com/698x413" width="698" height="413" alt="Только ночь, только хардкор">
+            </div>
+          </div>
+        </div>
+      </div>
+        
 
-    </div>
+      <!--Теперь разметим нумерацию страниц. 
+      Для нее тоже есть общепринятое название — пагинация.-->
+      <div class="slideshow__controls">
+      <ul class="pagination-list">
+        <!--Каждая кнопка - ссылка на одну из страниц на сайте.-->
+          <li class="pagination-item pagination-item-current">1</a></li>
+          <!--Для кнопки, указывающей на текущую страницу, добавим соответствующий класс.
+          ёpagination-item-current-->
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+      </ul>  
+      </div>
+    </section>
+    <!--слайд-шоу-->
+
     <!--Основное содержимое, тег main с классом container.-->
     <main class="container">
       <!--Название сайта с тегом h1-->
       <h1 class="visually-hidden">Web-студия «Nerd's»</h1> 
-      <!--слайд-шоу-->
-      <section class="slideshow">
-        <!--Для читалок-->
-        <!--<h2 class="visually-hidden">Слайд-шоу</h2>-->
-        
-        <!--src= "img/slideshow-1.jpg"-->
-        <div class="left-column">
-          <p class="slideshow-name"><h3>Долго, дорого, скрупулезно.</h3></p>
-          <p class="slideshow-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <p><a class="slideshow-button" href="#">УЗНАТЬ БОЛЬШЕ</a></p>
-        </div>  
-        <div class="right-column">
-          <img src="http://via.placeholder.com/698x413" width="698" height="413" alt="Долго, дорого, скрупулезно">
-        </div>
-        
-        <div class="left-column"> 
-          <p class="slideshow-name"><h3>Любим математику как никто другой</h3></p>
-          <p class="slideshow-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <p><a class="slideshow-button" href="#">УЗНАТЬ БОЛЬШЕ</a></p>
-        </div>
-        <div class="right-column">
-          <img src="http://via.placeholder.com/698x413" width="698" height="413" alt="Любим математику как никто другой">
-        </div>
-                     
-        <div class="left-column"> 
-          <p class="slideshow-name"><h3>Только ночь, только хардкор</h3></p>
-          <p class="slideshow-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <p><a class="slideshow-button" href="#">УЗНАТЬ БОЛЬШЕ</a></p>
-        </div>
-        <div class="right-column">
-          <img src="http://via.placeholder.com/698x413" width="698" height="413" alt="Только ночь, только хардкор">
-        </div>
-          
-
-        <!--Теперь разметим нумерацию страниц. 
-        Для нее тоже есть общепринятое название — пагинация.-->
-        <ul class="pagination-list">
-          <!--Каждая кнопка - ссылка на одну из страниц на сайте.-->
-            <li class="pagination-item pagination-item-current">1</a></li>
-            <!--Для кнопки, указывающей на текущую страницу, добавим соответствующий класс.
-            ёpagination-item-current-->
-            <li class="pagination-item"><a href="#">2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
-        </ul>  
-      </section>
-      <!--слайд-шоу-->
+      
 
       <!--Услуги-->
       <article class="services">
@@ -100,25 +117,25 @@
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-list">
           <!--Веб-сайты img/services-1.jpg-->
-          <li class="services-list-site">
+          <li class="services-item services-list-site">
             <img src="http://via.placeholder.com/300x146" width="300" height="146" alt="Веб-сайты">
             <h3 class="services-title">Веб-сайты</h3>
             <p class="services-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <p><a class="services-button" href="#">ЗАКАЗАТЬ</a></p>
+            <a class="button services-button" href="#">ЗАКАЗАТЬ</a>
           </li>
           <!--Приложения-->
-          <li class="services-list-Apps">
+          <li class="services-item services-list-apps">
             <img src="http://via.placeholder.com/300x146" width="300" height="146" alt="Приложения">
             <h3 class="services-title">Приложения</h3>
             <p class="services-text">Покорите топ-10 приложений в AppStore и Google Play</p>
-            <p><a class="services-button" href="#">ЗАКАЗАТЬ</a></p>
+            <a class="button services-button" href="#">ЗАКАЗАТЬ</a>
           </li>
           <!--Презентации-->
-          <li class="services-list-Presentations">
+          <li class="services-item services-list-presentations">
             <img src="http://via.placeholder.com/300x146" width="300" height="146" alt="Презентации">
             <h3 class="services-title">Презентации</h3>
             <p class="services-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-            <p><a class="services-button" href="#">ЗАКАЗАТЬ</a></p>
+            <a class="button services-button" href="#">ЗАКАЗАТЬ</a>
           </li>
         </ul>
       </article>
@@ -127,107 +144,116 @@
       <!--О компании -->
       <section class="about">
         <!--<h2 class="visually-hidden">О компании</h2>-->
-        <h1 class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
-        <p class="about-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-            превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <ul class="">
-          <h3 class="">Выполняем заказы на разработку:</h3>
-          <li class="">Веб-сайтов любой сложности</li>
-          <li class="">Мобильных приложений для iOS и Android</li>
-          <li class="">Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </section>
+        <div class="about-row">
+          <div class="about-left">
+            <h1 class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
 
-      <!--Преимущество img/Advantage-1.jpg-->
-      <section class="advantage">
-        <h2 class="visually-hidden">Преимущество</h2>
-        <p><img src="http://via.placeholder.com/360x208" width="360" height="208" alt="Преимущество"></p>
-        <b>с 2004 года Любим точность во всем:</b>
-        <ul class="features">
-          <li>
-            <span class="features-digits">146<sup>%</sup></span>
-            <span>Уровень самоотдачи</span>
-          </li>
-          <li>
-            <span class="features-digits">100<sup>%</sup></span>
-            <span>Соблюдение сроков</span>
-          </li>
-          <li>
-            <span class="features-digits">50<sup>%</sup></span>
-            <span>Минимальная предоплата</span>
-          </li>
-        </ul>
+            <p class="about-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+              превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <ul class="about-text">
+              <h3 class="about-title">Выполняем заказы на разработку:</h3>
+              <li>Веб-сайтов любой сложности</li>
+              <li>Мобильных приложений для iOS и Android</li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+          
+          <!--Преимущество img/Advantage-1.jpg-->
+          <div class="advantage about-right">
+            <h2 class="visually-hidden">Преимущество</h2>
+            <p><img src="http://via.placeholder.com/360x208" width="360" height="208" alt="Преимущество"></p>
+            <b>с 2004 года Любим точность во всем:</b>
+            <ul class="features">
+              <li>
+                <span class="features-digits">146<sup>%</sup></span>
+                <span>Уровень самоотдачи</span>
+              </li>
+              <li>
+                <span class="features-digits">100<sup>%</sup></span>
+                <span>Соблюдение сроков</span>
+              </li>
+              <li>
+                <span class="features-digits">50<sup>%</sup></span>
+                <span>Минимальная предоплата</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Преимущество -->  
       </section>
-      <!--Преимущество -->
+      <!--О компании -->
+
+      
 
       <!--Партнеры img/Partners-1.jpg -->
       <section class="Partners">
         <h2 class="visually-hidden">Партнеры</h2>
-        <ul>
-          <li>
-            <img src="http://via.placeholder.com/199x68" width="199" height="68" alt="htmlacademy.ru">
-            <p><a href="https://htmlacademy.ru">HTML Academy</a></p>
-          </li>
-          <li>
-            <img src="http://via.placeholder.com/209x90" width="209" height="90" alt="barbershop.ru">
-            <p><a href="https://barbershop.ru">Барбершоп «Бородинский»</a></p>
-          </li>
-          <li>
-            <img src="http://via.placeholder.com/185x52" width="185" height="52" alt="Pink.ru">
-            <p><a href="https://Pink.ru">Pink.ru</a></p>
-          </li>
-          <li>
-            <img src="http://via.placeholder.com/173x84" width="173" height="84" alt="Mishka.ru">
-            <p><a href="https://Mishka.ru">Mishka.ru</a></p>
-          </li>
-        </ul>
+        <a class="partners-item" href="https://htmlacademy.ru">HTML Academy
+          <img src="http://via.placeholder.com/199x68" width="199" height="68" alt="htmlacademy.ru"></a>
+        
+        <a href="https://barbershop.ru">Барбершоп «Бородинский»
+          <img src="http://via.placeholder.com/209x90" width="209" height="90" alt="barbershop.ru"></a>
+        
+        <a href="https://Pink.ru">Pink.ru   
+          <img src="http://via.placeholder.com/185x52" width="185" height="52" alt="Pink.ru"></a>
+          
+        <a href="https://Mishka.ru">Mishka.ru  
+            <img src="http://via.placeholder.com/173x84" width="173" height="84" alt="Mishka.ru"></a>
+          
       </section>
       <!--Партнеры -->
+    </main>
 
-      <!--Карта -->
-      <section class="map">
-        <h2 class="visually-hidden">Карта</h2>
-        <img src="http://via.placeholder.com/200x200" width="100" height="100" alt="map">
+    <!--Карта -->
+    <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
+      <div>
+        <p align="center" class="center">
+          <img src="http://via.placeholder.com/1725x808" width="1725" height="808" alt="map">
+        </p>
         <img src="http://via.placeholder.com/231x190" width="231" height="190" alt="map-market">
-      </section>
-      <!--Карта -->
+      </div>
 
       <!--Адрес -->
-      <section class="Address">
+      <div class="Address">
         <h2 class="visually-hidden">Адрес</h2>
         <b>NЁRDS DESIGN STUDIO</b>
         <p>191186, Санкт-Петербург, 
             ул. Б. Конюшенная, д. 19/8</p>
-            
+          
         <p>тел. +7 (812) 275-75-75</p>
         <!--button-->
         <p><a class="Address-button" href="#">Напишите нам</a></p>
-      </section>
+      </div>
       <!--Адрес -->
+    </section>
+    <!--Карта -->
 
-      <!--Напишите нам-->
-      <section class="ContactUs">
-        <h2>Напишите нам</h2>
-        <span class="modal-close">x</span>  
-        <p>Ваше имя:</p>
-        <!--lable-->
-        <p>Ваш e-mail:</p>
-        <!--lable-->
-        <p>Текст письма:</p>
-        <!--lable-->
-        
-        <!--button-->
-        <p><a class="ContactUs-button" href="#">ОТПРАВИТЬ</a></p>
-      </section>
-      <!--Напишите нам-->
-    </main>
+    
 
+    <!--Напишите нам-->
+    <section class="ContactUs">
+      <h2>Напишите нам</h2>
+      <span class="modal-close">x</span>  
+      <p>Ваше имя:</p>
+      <!--lable-->
+      <p>Ваш e-mail:</p>
+      <!--lable-->
+      <p>Текст письма:</p>
+      <!--lable-->
+      
+      <!--button-->
+      <p><a class="ContactUs-button" href="#">ОТПРАВИТЬ</a></p>
+    </section>
+    <!--Напишите нам-->
+
+    <!-- Футер-->
     <footer class="main-footer">
       <div>
-        <ul>
-          <li><a class="footer-social" href="#">Вконтакте</a></li>
-          <li><a class="footer-social" href="#">Фейсбук</a></li>
-          <li><a class="footer-social" href="#">Инстаграм</a></li>
+        <ul class="footer-social">
+          <li><a href="#">Вконтакте</a></li>
+          <li><a href="#">Фейсбук</a></li>
+          <li><a href="#">Инстаграм</a></li>
         </ul>
       </div>
       <div> 
