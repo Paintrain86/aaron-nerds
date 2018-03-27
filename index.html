@@ -9,35 +9,33 @@
         
         float: left;
       }
-
-      /*.right-column {
-        
-        float: right;
-      }*/
     
     </style>
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header class="main-header container">
+    <header class="main-header">
+      <!--container-Это центровщик -->
+      <div class="container">
         <!-- логотип сайта с размерами img/index-logo.svg-->
-        <a class="main-header-logo" href="index.html">
+        <a class="logo" href="index.html">
             <img src="http://via.placeholder.com/160x65" width="160" height="65" alt="Логотип web-студии «Nerd's»">
         </a>
         <!-- Навигация по сайту с классом -->
         <nav class="main-navigation">
             <!-- Неупорядоченный список -->
-            <ul class="site-navigation">
+            <ul>
                 <li><a href="Studio.html">Студия</a></li>
                 <li><a href="Clients.html">Клиенты</a></li>
                 <li><a href="Catalog.html">Магазин</a></li>
                 <li><a href="Contacts.html">Контакты</a></li>
             </ul>
         </nav>
-        <a class="basket-navigation" href="Basket.html">
+        <a class="basket" href="Basket.html">
           <img src="http://via.placeholder.com/15x15" width="15" height="15" alt="Корзина">
           Корзина
         </a>
+      </div> 
     </header>
     <!-- Шапка сайта -->
     
@@ -45,68 +43,71 @@
     <section class="slideshow">
       <!--Для читалок-->
       <!--<h2 class="visually-hidden">Слайд-шоу</h2>-->
-      
-      <div class="slideshow__item">
-      <!--src= "img/slideshow-1.jpg"-->
-        <div class="slideshow__slides">
-          <div class="slideshow__slides-item">
-            <div class="left-column">
-              <p class="slideshow-name"><h3>Долго, дорого, скрупулезно.</h3></p>
-              <p class="slideshow-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-              <p><a class="slideshow-button" href="#">УЗНАТЬ БОЛЬШЕ</a></p>
-            </div>  
-            <div class="right-column">
-              <img src="http://via.placeholder.com/698x413" width="698" height="413" alt="Долго, дорого, скрупулезно">
-            </div>
-          </div>
-        </div>
-      <!--src= "img/slideshow-2.jpg"-->
-        <div class="slideshow__slides">
-          <div class="slideshow__slides-item">
-            <div class="left-column"> 
-              <p class="slideshow-name"><h3>Любим математику как никто другой</h3></p>
-              <p class="slideshow-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-              <p><a class="slideshow-button" href="#">УЗНАТЬ БОЛЬШЕ</a></p>
-            </div>
-            <div class="right-column">
-              <img src="http://via.placeholder.com/698x413" width="698" height="413" alt="Любим математику как никто другой">
-            </div>
-          </div>
-        </div>
-      
-      <!--src= "img/slideshow-3.jpg"-->
-        <div class="slideshow__slides">
-          <div class="slideshow__slides-item">            
-            <div class="left-column"> 
-              <p class="slideshow-name"><h3>Только ночь, только хардкор</h3></p>
-              <p class="slideshow-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-              <p><a class="slideshow-button" href="#">УЗНАТЬ БОЛЬШЕ</a></p>
-            </div>
-            <div class="right-column">
-              <img src="http://via.placeholder.com/698x413" width="698" height="413" alt="Только ночь, только хардкор">
-            </div>
-          </div>
-        </div>
-      </div>
-        
+      <!--container-Это центровщик -->
+      <div class="container">
+        <!--slideshow__inner - Начало верстки слайд шоу-->
+        <div class="slideshow__inner">
+          
+          <div class="slideshow__slides">
 
-      <!--Теперь разметим нумерацию страниц. 
-      Для нее тоже есть общепринятое название — пагинация.-->
-      <div class="slideshow__controls">
-      <ul class="pagination-list">
-        <!--Каждая кнопка - ссылка на одну из страниц на сайте.-->
-          <li class="pagination-item pagination-item-current">1</a></li>
-          <!--Для кнопки, указывающей на текущую страницу, добавим соответствующий класс.
-          ёpagination-item-current-->
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-      </ul>  
-      </div>
+            <!--src= "img/slideshow-1.jpg"-->
+            <div class="slideshow__slides--item">
+              <div class="slideshow__left-column">
+                <p class="slideshow__name"><h3>Долго, дорого, скрупулезно.</h3></p>
+                <p class="slideshow__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <p><a class="slideshow__button" href="#">УЗНАТЬ БОЛЬШЕ</a></p>
+              </div>  
+              <div class="slideshow__right-column">
+                <img src="http://via.placeholder.com/698x413" width="698" height="413" alt="Долго, дорого, скрупулезно">
+              </div>
+            </div><!--src= "img/slideshow-1.jpg"-->
+
+            <!--src= "img/slideshow-2.jpg"-->
+            <div class="slideshow__slides--item">
+              <div class="slideshow__left-column"> 
+                <p class="slideshow__name"><h3>Любим математику как никто другой</h3></p>
+                <p class="slideshow__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                <p><a class="slideshow__button" href="#">УЗНАТЬ БОЛЬШЕ</a></p>
+              </div>
+              <div class="slideshow__right-column">
+                <img src="http://via.placeholder.com/698x413" width="698" height="413" alt="Любим математику как никто другой">
+              </div>
+            </div><!--src= "img/slideshow-2.jpg"-->
+
+            <!--src= "img/slideshow-3.jpg"-->
+            <div class="slideshow__slides--item">            
+              <div class="slideshow__left-column"> 
+                <p class="slideshow__name"><h3>Только ночь, только хардкор</h3></p>
+                <p class="slideshow__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                <p><a class="slideshow__button" href="#">УЗНАТЬ БОЛЬШЕ</a></p>
+              </div>
+              <div class="slideshow__right-column">
+                <img src="http://via.placeholder.com/698x413" width="698" height="413" alt="Только ночь, только хардкор">
+              </div>
+            </div><!--src= "img/slideshow-3.jpg"-->
+
+          </div><!--slideshow__slides-->
+        
+          <!--slideshow__controls -->
+          <div class="slideshow__controls">
+            <!--нумерация страниц (pagination)-->
+            <ul class="pagination__list">
+            <!--Каждая кнопка - ссылка на однин из слайдев-->
+              <li class="pagination__item pagination__item--current">1</a></li> <!--текущий current-->
+              <li class="pagination__item"><a href="#">2</a></li>
+              <li class="pagination__item"><a href="#">3</a></li>
+            </ul>  
+          </div><!--slideshow__controls -->
+
+        </div><!--slideshow__inner - Начало верстки слайд шоу-->
+      </div><!--container-Это центровщик -->
     </section>
+
     <!--слайд-шоу-->
 
     <!--Основное содержимое, тег main с классом container.-->
     <main class="container">
+      
       <!--Название сайта с тегом h1-->
       <h1 class="visually-hidden">Web-студия «Nerd's»</h1> 
       
@@ -114,7 +115,7 @@
       <!--Услуги-->
       <article class="services">
         <!--Для читалок-->
-        <h2 class="visually-hidden">Услуги</h2>
+        <h2 class="visually__hidden">Услуги</h2>
         <ul class="services-list">
           <!--Веб-сайты img/services-1.jpg-->
           <li class="services-item services-list-site">
@@ -144,69 +145,70 @@
       <!--О компании -->
       <section class="about">
         <!--<h2 class="visually-hidden">О компании</h2>-->
-        <div class="about-row">
-          <div class="about-left">
-            <h1 class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
 
-            <p class="about-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+        <div class="about__row">
+          <div class="about__left">
+            <h1 class="about__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
+            <p class="about__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
               превыше креатива. Работаем не покладая рук, как роботы.</p>
-            <ul class="about-text">
-              <h3 class="about-title">Выполняем заказы на разработку:</h3>
+          </div>
+          <div class="about__right">
+              <h2 class="visually__hidden">Преимущество</h2>
+              <p><img src="http://via.placeholder.com/360x208" width="360" height="208" alt="Преимущество"></p>
+          </div>
+        </div>
+
+        <div class="about__row">
+          <div class="about__left">
+            <ul class="about__text">
+              <h3 class="about__title">Выполняем заказы на разработку:</h3>
               <li>Веб-сайтов любой сложности</li>
               <li>Мобильных приложений для iOS и Android</li>
               <li>Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
           </div>
-          
-          <!--Преимущество img/Advantage-1.jpg-->
-          <div class="advantage about-right">
-            <h2 class="visually-hidden">Преимущество</h2>
-            <p><img src="http://via.placeholder.com/360x208" width="360" height="208" alt="Преимущество"></p>
-            <b>с 2004 года Любим точность во всем:</b>
+          <div class="about__right">
+            <h3>с 2004 года Любим точность во всем:</h3>
             <ul class="features">
               <li>
-                <span class="features-digits">146<sup>%</sup></span>
+                <span class="features__digits">146<sup>%</sup></span>
                 <span>Уровень самоотдачи</span>
               </li>
               <li>
-                <span class="features-digits">100<sup>%</sup></span>
+                <span class="features__digits">100<sup>%</sup></span>
                 <span>Соблюдение сроков</span>
               </li>
               <li>
-                <span class="features-digits">50<sup>%</sup></span>
+                <span class="features__digits">50<sup>%</sup></span>
                 <span>Минимальная предоплата</span>
               </li>
             </ul>
           </div>
         </div>
-        <!--Преимущество -->  
-      </section>
-      <!--О компании -->
 
-      
+      </section><!--О компании -->
 
       <!--Партнеры img/Partners-1.jpg -->
-      <section class="Partners">
-        <h2 class="visually-hidden">Партнеры</h2>
-        <a class="partners-item" href="https://htmlacademy.ru">HTML Academy
-          <img src="http://via.placeholder.com/199x68" width="199" height="68" alt="htmlacademy.ru"></a>
+      <h2 class="visually__hidden">Партнеры</h2>
+      <section class="partners">
+          <a class="partners__item" href="https://htmlacademy.ru">HTML Academy
+            <img src="http://via.placeholder.com/199x68" width="199" height="68" alt="htmlacademy.ru"></a>
         
-        <a href="https://barbershop.ru">Барбершоп «Бородинский»
-          <img src="http://via.placeholder.com/209x90" width="209" height="90" alt="barbershop.ru"></a>
+          <a href="https://barbershop.ru">Барбершоп «Бородинский»
+            <img src="http://via.placeholder.com/209x90" width="209" height="90" alt="barbershop.ru"></a>
         
-        <a href="https://Pink.ru">Pink.ru   
-          <img src="http://via.placeholder.com/185x52" width="185" height="52" alt="Pink.ru"></a>
+          <a href="https://Pink.ru">Pink.ru   
+            <img src="http://via.placeholder.com/185x52" width="185" height="52" alt="Pink.ru"></a>
           
-        <a href="https://Mishka.ru">Mishka.ru  
+          <a href="https://Mishka.ru">Mishka.ru  
             <img src="http://via.placeholder.com/173x84" width="173" height="84" alt="Mishka.ru"></a>
-          
       </section>
       <!--Партнеры -->
     </main>
 
     <!--Карта -->
     <section class="map">
-      <h2 class="visually-hidden">Карта</h2>
+      <h2 class="visually__hidden">Карта</h2>
       <div>
         <p align="center" class="center">
           <img src="http://via.placeholder.com/1725x808" width="1725" height="808" alt="map">
@@ -216,14 +218,14 @@
 
       <!--Адрес -->
       <div class="Address">
-        <h2 class="visually-hidden">Адрес</h2>
+        <h2 class="visually__hidden">Адрес</h2>
         <b>NЁRDS DESIGN STUDIO</b>
         <p>191186, Санкт-Петербург, 
             ул. Б. Конюшенная, д. 19/8</p>
           
         <p>тел. +7 (812) 275-75-75</p>
         <!--button-->
-        <p><a class="Address-button" href="#">Напишите нам</a></p>
+        <p><a class="Address__button" href="#">Напишите нам</a></p>
       </div>
       <!--Адрес -->
     </section>
@@ -232,7 +234,7 @@
     
 
     <!--Напишите нам-->
-    <section class="ContactUs">
+    <section class="contactUs">
       <h2>Напишите нам</h2>
       <span class="modal-close">x</span>  
       <p>Ваше имя:</p>
