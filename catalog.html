@@ -34,169 +34,159 @@
     <!-- Шапка сайта -->
 
     <!--Основное содержимое, тег main с классом container.-->
-    <main class="container">
-      
-      
-      <section class="filters">
-        <!--Весь раздел с фильтрами разметим с помощью section с классом и добавим заголовок, 
-        который в будущем будет скрыт. Такой заголовок останется видимым для поисковиков и читалок.-->
-        <h2 class="visually-hidden">Фильтр товаров</h2>
+    <!--каталог-->
+    <div class="catalog">
+      <!--центровщик-->
+      <div class="container">
+        <!--каталог внутренний-->
+        <main class="catalog__inner">
+          <!--сортировка каталога-->
+          <div class="catalog__sort">
+            <!---->
+            <h2 class="visually-hidden">Сортировка</h2>
+            <p>СОРТИРОВАТЬ: по цене по типу по названию</p>
+            <!-- Здесь будет форма -->
+          </div><!--сортировка каталога-->
 
-        <!-- Здесь будет форма -->
-      </section>
+          <!--список каталогов-->
+          <div class="catalog__list">
+            <!--Sedona-->
+            <div class="catalog__item">
+              <img class="catalog__item--img" src="img/catalog/img-sedona.jpg" width="360" height="576" alt="Sedona">
+              <div class="catalog__item--info">
+                <h3 class="catalog__item--title">Sedona</h3>
+                <p class="catalog__item--text">Информационный сайт для туристов</p>
+                <b><a class="catalog__item--btn" href="#">9 900 ₽</a></b>
+              </div><!--catalog__item-info-->
+            </div><!--catalog__item-->
+            <!--Sedona-->
 
-      <section class="Sort">
-        <!--Весь раздел с фильтрами разметим с помощью section с классом и добавим заголовок, 
-        который в будущем будет скрыт. Такой заголовок останется видимым для поисковиков и читалок.-->
-        <h2 class="visually-hidden">Сортировка</h2>
+            <!--Pink App-->
+            <div class="catalog__item">
+              <img class="catalog__item--img" src="img/catalog/img-pink.jpg" width="360" height="576" alt="Pink App">
+              <div class="catalog__item--info">
+                <h3 class="catalog__item--title">Pink App</h3>
+                <p class="catalog__item--text">Продуктовый лендинг приложения для iOS и Android</p>
+                <b><a class="catalog__item--btn" href="#">9 900 ₽</a></b>
+              </div><!--catalog__item-info-->
+            </div><!--catalog__item-->
+            <!--Pink App-->
+
+            <!--Barbershop-->
+            <div class="catalog__item">
+              <img class="catalog__item--img" src="img/catalog/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
+              <div class="catalog__item--info">
+                <h3 class="catalog__item--title">Barbershop</h3>
+                <p class="catalog__item--text">Сайт салоны красоты. Для мужчин, да.</p>
+                <b><a class="catalog__item--btn" href="#">9 900 ₽</a></b>
+              </div><!--catalog__item-info-->
+            </div><!--catalog__item-->
+            <!--Barbershop-->  
+
+            <!--MISHKA-->
+            <div class="catalog__item">
+              <img class="catalog__item--img" src="img/catalog/img-mishka.jpg" width="360" height="576" alt="Mishka Hover">
+              <div class="catalog__item--info">
+                <h3 class="catalog__item--title">MISHKA</h3>
+                <p class="catalog__item--text">Интернет-магазин вязаных игрушек</p>
+                <b><a class="catalog__item--btn" href="#">9 900 ₽</a></b>
+              </div><!--catalog__item-info-->
+            </div><!--catalog__item-->
+            <!--MISHKA-->  
+
+            <!--A Plus-->
+            <div class="catalog__item">
+              <img class="catalog__item--img" src="img/catalog/img-aplus.jpg" width="360" height="576" alt="A Plus">
+              <div class="catalog__item--info">
+                <h3 class="catalog__item--title">A Plus</h3>
+                <p class="catalog__item--text">Лендинг курсов повышения квалификации</p>
+                <b><a class="catalog__item--btn" href="#">9 900 ₽</a></b>
+              </div><!--catalog__item-info-->
+            </div><!--catalog__item-->
+            <!--A Plus-->  
+
+            <!--КВАСТ-->
+            <div class="catalog__item">
+              <img class="catalog__item--img" src="img/catalog/img-kvast.jpg" width="360" height="576" alt="КВАСТ">
+              <div class="catalog__item--info">
+                <h3 class="catalog__item--title">КВАСТ</h3>
+                <p class="catalog__item--text">Лендинг курсов повышения квалификации</p>
+                <b><a class="catalog__item--btn" href="#">9 900 ₽</a></b>
+              </div><!--catalog__item-info-->
+            </div><!--catalog__item-->
+            <!--КВАСТ-->  
+
+          </div><!--список каталогов catalog__list-->
+
+        </main><!--каталог внутренний-->
+
+        <div class="pagination">
+          <!--Теперь разметим нумерацию страниц. 
+            Для нее тоже есть общепринятое название — пагинация.-->
+          <ul class="pagination__list">
+          <!--Каждая кнопка - ссылка на одну из страниц на сайте.-->
+            <li class="pagination__item pagination__item--current">1</a></li>
+            <!--Для кнопки, указывающей на текущую страницу, добавим соответствующий класс.
+            ёpagination-item-current-->
+            <li class="pagination__item"><a href="#">2</a></li>
+            <li class="pagination__item"><a href="#">3</a></li>
+            <li class="pagination__item"><a href="#">4</a></li>
+            <li class="pagination__item"><a href="#">Следующая</a></li>
+          </ul>    
+        </div>
         
-        <!-- Здесь будет форма -->
-      </section>
+      </div><!--центровщик-->
+    </div><!--каталог-->
 
+    <!--Фильтр товаров-->
+    <aside class="filters">
+      <!--Весь раздел с фильтрами разметим с помощью section с классом и добавим заголовок, 
+      который в будущем будет скрыт. Такой заголовок останется видимым для поисковиков и читалок.-->
+      <h2 class="visually__hidden">Фильтр товаров</h2>
       
+      <!--стоимость -->  
+      <div class="value"> 
+        <div class="half__width">
+          <h2 class="value__title">Стоимость:</h2>
+          <!--<label for="rating">Оценка поездки</label>-->  
+          0 <input type="range" id="rating" name="rating" min="1" max="15000" step="1" value="10" oninput="ratingOutput.value = rating.value"> 15000
+        </div>
+        <div class="half-width output-area">
+          от 0 до 
+          <output name="ratingOutput" id="ratingOutput">15000</output>
+        </div>
+      </div>
+        <!--<label for="review">Текст отзыва</label>
+        <textarea id="review" rows="5">Это было просто мяу!</textarea>-->
+      <!--стоимость --> 
 
-      <section class="catalog">
-        <h2 class="visually__hidden">Список готовых шаблонов</h2>
-        
-        <div class="catalog__list">
-          <!--Sedona-->
-          <div class="catalog__item">
-            <div>
-              <!--img/browser.jpg-->
-              <p><img src="img/svg-nerds/browser.svg" width="360" height="40" alt="browser"></p>
-              <!--img/img-sedona.jpg-->
-              <p><img src="img/catalog/img-sedona.jpg" width="360" height="576" alt="Sedona"></p>
-            </div>
-            <div>             
-              <!--под вопросом! img/white-back-copy.jpg-->
-              <p><img src="http://via.placeholder.com/360x231" width="360" height="231" alt="white back copy"></p> 
+      <!--сетка -->
+      <div class="grid">
+        <h2 class="grid__title">Сетка:</h2>
+        <ul class="grid__list">
+          <li class="grid__item">Адаптивная</li>
+          <li class="grid__item">Фиксированная</li>
+          <li class="grid__item">Резиновая</li>
+        </ul>
+      </div><!--class="grid"-->
+      <!--сетка -->
 
-              <h3>Sedona</h3>
-              <p class="catalog__item--text">Информационный сайт для туристов</p>
-              <p class="catalog__item--price">
-                <b><a class="button" href="#">9 900 ₽</a></b>
-              </p>
-            </div>
-          </div>
-          <!--Sedona-->
+      <!--особенности -->
+      <div class="features__title">
+        <h2 class="features__title">Особенности:</h2>
+        <ul class="features__list">
+          <li class="features__item">Слайдер</li>
+          <li class="features__item">Блок преимуществ</li>
+          <li class="features__item">Новости</li>
+          <li class="features__item">Гаоерея</li>
+          <li class="features__item">Корзина</li>
+        </ul>
+      </div><!--class="features__title"-->
+      <!--особенности -->
 
-          <!--Pink App-->
-          <div class="catalog__item">
-            <div>
-              <!--img/browser-gray.jpg-->
-              <p><img src="img/svg-nerds/browser.svg" width="360" height="40" alt="browser-gray"></p>
-              <!--img/img-pink.jpg-->
-              <p><img src="img/catalog/img-pink.jpg" width="360" height="576" alt="Pink App"></p>
-            </div>
-            <div>
-              <!--под вопросом! img/white-back-copy.jpg-->
-              <p><img src="http://via.placeholder.com/360x231" width="360" height="231" alt="white back copy"></p> 
+      <b><a class="filters__btn" href="#">Показать</a></b>
+    </aside>
 
-              <h3>Pink App</h3>
-              <p class="catalog__item--text">Продуктовый лендинг приложения для iOS и Android</p>
-              <p class="catalog__item--price">
-                <b><a class="button" href="#">9 900 ₽</a></b>
-              </p>
-            </div>
-          </div>
-          <!--Pink App-->
-
-          <!--Barbershop-->
-          <div class="catalog-item">
-            <div>             
-              <p><img src="img/svg-nerds/browser.svg" width="360" height="40" alt="browser"></p>
-              <p><img src="img/catalog/img-barbershop.jpg" width="360" height="576" alt="Barbershop"></p>
-            </div>
-            <div>
-              <!--под вопросом! img/white-back-copy.jpg-->
-              <p><img src="http://via.placeholder.com/360x231" width="360" height="231" alt="white back copy"></p> 
-
-              <h3>Barbershop</h3>
-              <p class="catalog-item-text">Сайт салоны красоты. Для мужчин, да.</p>
-              <p class="catalog-item-price">
-                <b><a class="button" href="#">9 900 ₽</a></b>
-              </p>
-            </div>
-          </div>
-          <!--Barbershop-->
-
-          <!--MISHKA-->
-          <div class="catalog-item">
-            <div>
-              <p><img src="img/svg-nerds/browser.svg" width="360" height="40" alt="browser"></p>
-              <p><img src="img/catalog/img-mishka.jpg" width="360" height="576" alt="Mishka Hover"></p>
-            </div>
-            <div>
-              <!--под вопросом! img/white-back-copy.jpg-->
-              <p><img src="http://via.placeholder.com/360x231" width="360" height="231" alt="white back copy"></p> 
-
-              <h3>MISHKA</h3>
-              <p class="catalog-item-text">Интернет-магазин вязаных игрушек</p>
-              <p class="catalog-item-price">
-                <b><a class="button" href="#">9 900 ₽</a></b>
-              </p>
-            </div>
-          </div>
-          <!--MISHKA-->
-
-          <!--A Plus-->
-          <div class="catalog-item">
-            <div>
-              <p><img src="img/svg-nerds/browser.svg" width="360" height="40" alt="browser"></p>
-              <p><img src="img/catalog/img-aplus.jpg" width="360" height="576" alt="A Plus"></p>
-            </div>
-            <div>
-              <!--под вопросом! img/white-back-copy.jpg-->
-              <p><img src="http://via.placeholder.com/360x231" width="360" height="231" alt="white back copy"></p>
-              
-              <h3>A Plus</h3>
-              <p class="catalog-item-text">Лендинг курсов повышения квалификации</p>
-              <p class="catalog-item-price">
-                <b><a class="button" href="#">9 900 ₽</a></b>
-              </p>
-            </div>
-          </div>
-          <!--A Plus-->
-
-          <!--КВАСТ-->
-          <div class="catalog-item">
-            <div>
-              <p><img src="img/svg-nerds/browser.svg" width="360" height="40" alt="browser"></p>
-              <p><img src="img/catalog/img-kvast.jpg" width="360" height="576" alt="КВАСТ"></p>
-            </div>
-            <div>
-              <!--под вопросом! img/white-back-copy.jpg-->
-              <p><img src="http://via.placeholder.com/360x231" width="360" height="231" alt="white back copy"></p>
-              
-              <h3>КВАСТ</h3>
-              <p class="catalog-item-text">Промо-сайт производителя крафтового кваса</p>
-              <p class="catalog-item-price">
-                <b><a class="button" href="#">9 900 ₽</a></b>
-              </p>
-            </div>
-          </div>
-          <!--КВАСТ-->
-        </div><!--class="catalog__list"-->
-
-
-        <!--Теперь разметим нумерацию страниц. 
-          Для нее тоже есть общепринятое название — пагинация.-->
-        <ul class="pagination-list">
-        <!--Каждая кнопка - ссылка на одну из страниц на сайте.-->
-          <li class="pagination-item pagination-item-current">1</a></li>
-          <!--Для кнопки, указывающей на текущую страницу, добавим соответствующий класс.
-          ёpagination-item-current-->
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">4</a></li>
-          <li class="pagination-item"><a href="#">Следующая</a></li>
-        </ul>    
-      </section>
-
-      
-    </main>
-
-        
     <!--Карта -->
         <section class="map">
             <h2 class="visually__hidden">Карта</h2>
