@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Web-студия «Nerd's»</title>
+    <head>
+        <meta charset="utf-8">
+        <title>Web-студия «Nerd's»</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <!-- Шапка сайта -->
@@ -29,7 +32,7 @@
           Корзина
         </a>
       </div>
-      <h1>Магазин готовых шаблонов</h1>
+      <h1 class="main__title">Магазин готовых шаблонов</h1>
     </header>
     <!-- Шапка сайта -->
 
@@ -42,10 +45,20 @@
         <main class="catalog__inner">
           <!--сортировка каталога-->
           <div class="catalog__sort">
-            <!---->
-            <h2 class="visually-hidden">Сортировка</h2>
-            <p>СОРТИРОВАТЬ: по цене по типу по названию</p>
-            <!-- Здесь будет форма -->
+            <!--<h2 class="visually-hidden">Сортировка</h2>-->
+            
+            <h3 class="catalog__sort--title">СОРТИРОВАТЬ:</h3> 
+            <!--блок с типом сортировки-->
+            <div class="catalog__sort--types">
+              по цене по типу по названию
+            </div>
+
+            <!--блок с направлением (direction) сортировки-->
+            <div class="catalog__sort--direction">
+              вниз вверх
+            </div>
+            
+            
           </div><!--сортировка каталога-->
 
           <!--список каталогов-->
@@ -56,7 +69,7 @@
               <div class="catalog__item--info">
                 <h3 class="catalog__item--title">Sedona</h3>
                 <p class="catalog__item--text">Информационный сайт для туристов</p>
-                <b><a class="catalog__item--btn" href="#">9 900 ₽</a></b>
+                <a class="catalog__item--btn" href="#">9 900 ₽</a>
               </div><!--catalog__item-info-->
             </div><!--catalog__item-->
             <!--Sedona-->
@@ -125,7 +138,7 @@
             Для нее тоже есть общепринятое название — пагинация.-->
           <ul class="pagination__list">
           <!--Каждая кнопка - ссылка на одну из страниц на сайте.-->
-            <li class="pagination__item pagination__item--current">1</a></li>
+            <li class="pagination__item pagination__item--current">1</li>
             <!--Для кнопки, указывающей на текущую страницу, добавим соответствующий класс.
             ёpagination-item-current-->
             <li class="pagination__item"><a href="#">2</a></li>
@@ -139,54 +152,76 @@
     </div><!--каталог-->
 
     <!--Фильтр товаров-->
-    <aside class="filters">
-      <!--Весь раздел с фильтрами разметим с помощью section с классом и добавим заголовок, 
-      который в будущем будет скрыт. Такой заголовок останется видимым для поисковиков и читалок.-->
+    <aside class="filter">
       <h2 class="visually__hidden">Фильтр товаров</h2>
-      
-      <!--стоимость -->  
-      <div class="value"> 
-        <div class="half__width">
-          <h2 class="value__title">Стоимость:</h2>
-          <!--<label for="rating">Оценка поездки</label>-->  
-          0 <input type="range" id="rating" name="rating" min="1" max="15000" step="1" value="10" oninput="ratingOutput.value = rating.value"> 15000
+      <form action="" class="filter__form">
+        <!--стоимость -->  
+        <div class="filter__block">
+          <h4 class="filter__title">Стоимость</h4>
+          <div class="filter__blok-inner">
+            <div class="half__width">
+              <h2 class="value__title">Стоимость:</h2>
+              <!--<label for="rating">Оценка поездки</label>-->  
+              0 <input type="range" id="rating" name="rating" min="1" max="15000" step="1" value="10" oninput="ratingOutput.value = rating.value"> 15000
+            </div>
+            <div class="half-width output-area">
+              от 0 до 
+              <output name="ratingOutput" id="ratingOutput">15000</output>
+            </div>
+          </div>
         </div>
-        <div class="half-width output-area">
-          от 0 до 
-          <output name="ratingOutput" id="ratingOutput">15000</output>
+        <!--стоимость -->  
+
+        <!--Сетка -->  
+        <div class="filter__block">
+          <h4 class="filter__title">Сетка:</h4>
+          <div class="filter__blok-inner">
+            <label>
+              <input type="radio" name="question-one" value="adaptive" checked>Адаптивная;
+            </label>
+            <br>
+            <label>
+              <input type="radio" name="question-one" value="fixed">Фиксированная;
+            </label>
+            <br>
+            <label>
+              <input type="radio" name="question-one" value="rubber">Резиновая;
+            </label>
+          </div>
         </div>
-      </div>
-        <!--<label for="review">Текст отзыва</label>
-        <textarea id="review" rows="5">Это было просто мяу!</textarea>-->
-      <!--стоимость --> 
+        <!--Сетка -->  
 
-      <!--сетка -->
-      <div class="grid">
-        <h2 class="grid__title">Сетка:</h2>
-        <ul class="grid__list">
-          <li class="grid__item">Адаптивная</li>
-          <li class="grid__item">Фиксированная</li>
-          <li class="grid__item">Резиновая</li>
-        </ul>
-      </div><!--class="grid"-->
-      <!--сетка -->
-
-      <!--особенности -->
-      <div class="features__title">
-        <h2 class="features__title">Особенности:</h2>
-        <ul class="features__list">
-          <li class="features__item">Слайдер</li>
-          <li class="features__item">Блок преимуществ</li>
-          <li class="features__item">Новости</li>
-          <li class="features__item">Гаоерея</li>
-          <li class="features__item">Корзина</li>
-        </ul>
-      </div><!--class="features__title"-->
-      <!--особенности -->
-
-      <b><a class="filters__btn" href="#">Показать</a></b>
+        <!--Особенности -->
+        <div class="filter__block">
+          <h4 class="filter__title">Особенности:</h4>
+          <div class="filter__blok-inner">
+            <label>
+              <input type="checkbox" name="question-one" value="adaptive" checked>Слайдер;
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="question-one" value="fixed">Блок преимуществ;
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="question-one" value="rubber">Новости;
+            </label> 
+            <br>
+            <label>
+              <input type="checkbox" name="question-one" value="fixed">Галерея;
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="question-one" value="rubber">Корзина;
+            </label> 
+          </div>
+        </div>
+        <!--Особенности -->
+        <button class="filter__btn" type="submit">Показать</button>
+      </form>
     </aside>
-
+    <!--Фильтр товаров-->
+    
     <!--Карта -->
         <section class="map">
             <h2 class="visually__hidden">Карта</h2>
@@ -208,7 +243,7 @@
                 
               <p>тел. +7 (812) 275-75-75</p>
               <!--button-->
-              <p><a class="Address__button" href="#">Напишите нам</a></p>
+              <a class="adres__button" href="#">Напишите нам</a>
             </div>
             <!--Адрес -->
           </section>
@@ -216,21 +251,21 @@
       
           
       
-          <!--Напишите нам-->
-          <section class="contactUs">
-            <h2>Напишите нам</h2>
-            <span class="modal-close">x</span>  
-            <p>Ваше имя:</p>
-            <!--lable-->
-            <p>Ваш e-mail:</p>
-            <!--lable-->
-            <p>Текст письма:</p>
-            <!--lable-->
-            
-            <!--button-->
-            <p><a class="ContactUs-button" href="#">ОТПРАВИТЬ</a></p>
-          </section>
-          <!--Напишите нам-->
+    <!--Напишите нам-->
+    <section class="contactUs">
+      <h2 class="contactUs__title">Напишите нам</h2>
+      <span class="modal-close">x</span>  
+      <p class="contactUs__title">Ваше имя:</p>
+      <!--lable-->
+      <p class="contactUs__title">Ваш e-mail:</p>
+      <!--lable-->
+      <p class="contactUs__title">Текст письма:</p>
+      <!--lable-->
+      
+      <!--button-->
+      <a class="contactUs-button" href="#">ОТПРАВИТЬ</a>
+    </section>
+    <!--Напишите нам-->
       
           <!-- Футер-->
           <footer class="main-footer">
