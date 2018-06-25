@@ -1,43 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Web-студия «Nerd's»</title>
-    
-    <style type="text/css">
-      .left-column {
-        
-        float: left;
-      }
-    
-    </style>
-  </head>
-  <body>
+    <head>
+        <meta charset="utf-8">
+        <title>Web-студия «Nerd's»</title>
+        <!--<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">-->
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body class="table-layout">
     <!-- Шапка сайта -->
-    <header class="main__header">
-      <!--container-Это центровщик -->
-      <div class="container">
-        <!-- логотип сайта с размерами img/index-logo.svg-->
-        <a class="logo" href="index.html">
-            <!--http://via.placeholder.com/160x65 -->
-            <img src="img/svg-nerds/nerds-logo.svg" width="160" height="65" alt="Логотип web-студии «Nerd's»">
-        </a>
-        <!-- Навигация по сайту с классом -->
-        <nav class="main__navigation">
-            <!-- Неупорядоченный список -->
-            <ul>
-                <li><a href="Studio.html">Студия</a></li>
-                <li><a href="Clients.html">Клиенты</a></li>
-                <li><a href="Catalog.html">Магазин</a></li>
-                <li><a href="Contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
-        <a class="basket" href="Basket.html">
-          <img src="img/svg-nerds/cart-icon.svg" width="15" height="15" alt="Корзина">
-          Корзина
-        </a>
-      </div> 
-    </header>
+        <header class="main__header">
+            <!--container-Это центровщик -->
+            <div class="container">
+                <!-- логотип сайта с размерами img/index-logo.svg-->
+                <a class="logo" href="index.html">
+                    <!--http://via.placeholder.com/160x65 -->
+                    <img src="img/svg-nerds/nerds-logo.svg" width="160" height="65" alt="Логотип web-студии «Nerd's»">
+                </a>
+                <!-- Навигация по сайту с классом -->
+                <nav class="main__navigation">
+                    <!-- Неупорядоченный список -->
+                    <ul>
+                        <li><a href="Studio.html">Студия</a></li>
+                        <li><a href="Clients.html">Клиенты</a></li>
+                        <li><a href="Catalog.html">Магазин</a></li>
+                        <li><a href="Contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a class="basket" href="Basket.html">
+                    <img src="img/svg-nerds/cart-icon.svg" width="15" height="15" alt="Корзина">
+                    Корзина
+                </a>
+            </div> 
+        </header>
     <!-- Шапка сайта -->
     
     <!--слайд-шоу-->
@@ -54,7 +49,8 @@
             <!--src= "img/slideshow-1.jpg"-->
             <div class="slideshow__slides--item">
               <div class="slideshow__left-column">
-                <p class="slideshow__name"><h3>Долго, дорого, скрупулезно.</h3></p>
+                <!--<p class="slideshow__name"><h3>Долго, дорого, скрупулезно.</h3></p>-->
+                <h3 class="slideshow__name">Долго, дорого, скрупулезно.</h3>
                 <p class="slideshow__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
                 <p><a class="slideshow__button" href="#">УЗНАТЬ БОЛЬШЕ</a></p>
               </div>  
@@ -64,9 +60,9 @@
             </div><!--src= "img/slideshow-1.jpg"-->
 
             <!--src= "img/slideshow-2.jpg"-->
-            <div class="slideshow__slides--item">
+            <div class="slideshow__slides-item">
               <div class="slideshow__left-column"> 
-                <p class="slideshow__name"><h3>Любим математику как никто другой</h3></p>
+                <h3 class="slideshow__name">Любим математику как никто другой</h3>
                 <p class="slideshow__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                 <p><a class="slideshow__button" href="#">УЗНАТЬ БОЛЬШЕ</a></p>
               </div>
@@ -76,9 +72,9 @@
             </div><!--src= "img/slideshow-2.jpg"-->
 
             <!--src= "img/slideshow-3.jpg"-->
-            <div class="slideshow__slides--item">            
+            <div class="slideshow__slides-item">            
               <div class="slideshow__left-column"> 
-                <p class="slideshow__name"><h3>Только ночь, только хардкор</h3></p>
+                <h3 class="slideshow__name">Только ночь, только хардкор</h3>
                 <p class="slideshow__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                 <p><a class="slideshow__button" href="#">УЗНАТЬ БОЛЬШЕ</a></p>
               </div>
@@ -94,7 +90,7 @@
             <!--нумерация страниц (pagination)-->
             <ul class="pagination__list">
             <!--Каждая кнопка - ссылка на однин из слайдев-->
-              <li class="pagination__item pagination__item--current">1</a></li> <!--текущий current-->
+              <li class="pagination__item pagination__item-current">1</a></li> <!--текущий current-->
               <li class="pagination__item"><a href="#">2</a></li>
               <li class="pagination__item"><a href="#">3</a></li>
             </ul>  
@@ -117,27 +113,27 @@
       <article class="services">
         <!--Для читалок-->
         <h2 class="visually__hidden">Услуги</h2>
-        <ul class="services-list">
+        <ul class="services__list">
           <!--Веб-сайты img/services-1.jpg-->
-          <li class="services-item services-list-site">
+          <li class="services__item services__list-site">
             <img src="img/index/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
-            <h3 class="services-title">Веб-сайты</h3>
-            <p class="services-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button services-button" href="#">ЗАКАЗАТЬ</a>
+            <h3 class="services__title">Веб-сайты</h3>
+            <p class="services__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="button button__site services__button" href="#">ЗАКАЗАТЬ</a>
           </li>
           <!--Приложения-->
-          <li class="services-item services-list-apps">
+          <li class="services__item services__list-apps">
             <img src="img/index/illustration-2.jpg" width="300" height="146" alt="Приложения">
-            <h3 class="services-title">Приложения</h3>
-            <p class="services-text">Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="button services-button" href="#">ЗАКАЗАТЬ</a>
+            <h3 class="services__title">Приложения</h3>
+            <p class="services__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="button button__apps services__button" href="#">ЗАКАЗАТЬ</a>
           </li>
           <!--Презентации-->
-          <li class="services-item services-list-presentations">
+          <li class="services__item services__list-presentations">
             <img src="img/index/illustration-3.jpg" width="300" height="146" alt="Презентации">
-            <h3 class="services-title">Презентации</h3>
-            <p class="services-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="button services-button" href="#">ЗАКАЗАТЬ</a>
+            <h3 class="services__title">Презентации</h3>
+            <p class="services__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="button button__presentations services__button" href="#">ЗАКАЗАТЬ</a>
           </li>
         </ul>
       </article>
@@ -163,14 +159,13 @@
           <div class="about__left">
             <h3 class="about__title">Выполняем заказы на разработку:</h3>
             <ul class="about__text">
-              
               <li>Веб-сайтов любой сложности</li>
               <li>Мобильных приложений для iOS и Android</li>
               <li>Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
           </div>
           <div class="about__right">
-            <h3>с 2004 года Любим точность во всем:</h3>
+            <h3 class="about__title">с 2004 года Любим точность во всем:</h3>
             <ul class="features">
               <li>
                 <span class="features__digits">146<sup>%</sup></span>
@@ -230,7 +225,7 @@
           
         <p>тел. +7 (812) 275-75-75</p>
         <!--button-->
-        <p><a class="Address__button" href="#">Напишите нам</a></p>
+        <a class="adres__button" href="#">Напишите нам</a>
       </div>
       <!--Адрес -->
     </section>
@@ -240,17 +235,17 @@
 
     <!--Напишите нам-->
     <section class="contactUs">
-      <h2>Напишите нам</h2>
+      <h2 class="contactUs__title">Напишите нам</h2>
       <span class="modal-close">x</span>  
-      <p>Ваше имя:</p>
+      <p class="contactUs__title">Ваше имя:</p>
       <!--lable-->
-      <p>Ваш e-mail:</p>
+      <p class="contactUs__title">Ваш e-mail:</p>
       <!--lable-->
-      <p>Текст письма:</p>
+      <p class="contactUs__title">Текст письма:</p>
       <!--lable-->
       
       <!--button-->
-      <p><a class="ContactUs-button" href="#">ОТПРАВИТЬ</a></p>
+      <a class="contactUs-button" href="#">ОТПРАВИТЬ</a>
     </section>
     <!--Напишите нам-->
 
