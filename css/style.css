@@ -118,17 +118,17 @@ a {
     background: #00aa62;
 }
 
-.button__apps {
+.button__presentations {
     width: 160px; /* Ширина первого слоя */
     height: 50px;
     padding: 10px; /* Поля вокруг текста */
     background: #efc84a;
 }
-.button__apps:hover {
+.button__presentations {
     background: #eab534;
 }
 
-.button__apps:focus {
+.button__presentations {
     background: #e5a722;
 }
 
@@ -138,7 +138,7 @@ h1.about__title {
     text-transform: uppercase;
 }
 
-h3.about__title {
+.about__subtitle {
     text-transform: uppercase;
 }
 
@@ -148,7 +148,7 @@ b {
     text-transform: uppercase;
 }
 
-a.adres__button {
+.adres__button {
     width: 219px; /* Ширина первого слоя */
     height: 50px;
     padding: 10px; /* Поля вокруг текста */
@@ -158,27 +158,27 @@ a.adres__button {
     color: #ffffff;
 }
 
-a.adres__button:hover {
+.adres__button:hover {
     background: #e74246;
 }
 
-a.adres__button:focus {
+.adres__button:focus {
     background: #d7373b;
 }
 
-h2.contactUs__title {
+h2.contactus__title {
     font-size: 45px;
     line-height: 45px;
     font-weight: 700; /*400-normal, 700-bold*/
 }
 
-p.contactUs__title {
+p.contactus__title {
     font-size: 16px;
     line-height: 18px;
     font-weight: 700; /*400-normal, 700-bold*/
 }
 
-a.contactUs-button {
+a.contactus-button {
     width: 260px; /* Ширина первого слоя */
     height: 50px;
     padding: 10px; /* Поля вокруг текста */
@@ -190,11 +190,11 @@ a.contactUs-button {
     color: #ffffff;
 }
 
-a.contactUs-button:hover {
+a.contactus-button:hover {
     background: #e74246;
 }
 
-a.contactUs-button:focus {
+a.contactus-button:focus {
     background: #d7373b;
 }
 
@@ -218,13 +218,13 @@ a.contactUs-button:focus {
     line-height: 55px;
 }
 
-.catalog__sort--title {
+.sort__title {
     font-size: 18px;
     line-height: 18px;
     text-transform: uppercase;
 }
 
-.catalog__sort--types {
+.sort__types {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -286,3 +286,187 @@ a.contactUs-button:focus {
     
     text-transform: uppercase;
     color: #000000;
+}
+/*Спрятать текс
+.visually-hidden {
+    visibility: hidden;
+    
+}
+/* ----- Сеточные стили ----- */
+
+html,
+body {
+    min-width: 1440px;
+    min-height: 1925px;
+}
+/*body {
+    Временно для сетки 
+    background-image: url('img/nerds-index.jpg');
+    background-size: 1440px auto;
+    background-repeat: no-repeat;
+  }*/
+.main__header {
+    background-color: #eeeeee;
+    padding-top: 50px;
+}
+.main__header .container {
+    justify-content: space-between;
+}
+.container {
+    /*min-width: 1200px;
+    /*min-height: 80px;*/
+
+    display: flex;
+
+    flex-direction: row; /*главная ось направлена слева направо*/
+    align-items: flex-start;
+
+    width: 1200px;
+    /*padding-left: 20px;
+    padding-right: 20px;*/
+    
+    margin: 0 auto;
+}
+.logo {
+    width: 160px;
+    height: 65px;
+
+    /*margin-left: 120px;*/
+    padding-left: 20px;
+}
+.main-navigation {
+    padding-top: 30px;
+}
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+    padding: 10px;
+    list-style-type: none;
+}
+.basket {
+    width: 80px;
+    margin: 0;
+    /*margin-right: 100px;*/
+    padding-top: 25px;
+    padding-right: 20px;
+}
+
+/*slideshow*/
+.slideshow {
+    background-color: #eeeeee;
+}
+.slideshow__slides-item {
+    display: flex;
+    flex-direction: row; /*главная ось направлена слева направо*/
+    align-items: flex-start;
+    padding-top: 16px;    
+}
+.slideshow__left-column {
+    /*margin-left: 120px;*/
+    padding-left: 20px;    
+}
+.slideshow__right-column {
+    /*margin-right: 120px;*/
+    padding-right: 20px;
+}
+.pagination__list {
+    display: flex;
+    width: 90px;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Услуги*/
+main.container {
+    flex-wrap: wrap;
+    /*width: 1300px;*/
+}
+.services {
+    width: 1200px;
+    height: 510px;
+}
+.services__list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    list-style-type: none;
+}
+.services__item {
+    width: 300px;
+}
+.services__list-site {
+    margin-left: 0px;
+}
+.services__list-apps {
+    padding-left: 120px;
+}
+.services__list-presentations {
+    padding-left: 120px;
+}
+
+/*О компании*/
+.about {  
+    height: 530px;
+    padding-top: 40px;
+}
+.about__row {
+    display: flex;
+    justify-content: space-between; 
+}
+.about__left {
+    width: 700px;
+    padding-right: 140px;
+    padding-left: 20px;
+}
+.about__right {
+    width: 400px;
+}
+
+/*Партнеры*/
+.partners {
+    display: flex;
+    justify-content: space-between;
+    height: 185px;
+    padding-left: 20px;
+}
+/*Карта*/
+/*.map {
+    /*display: flex;
+    flex-wrap: wrap;
+    height: 420px;
+    margin-top: 80px;
+}*/
+/*Адрес*/
+.Address {
+    width: 320;
+    height: 310;
+    background-color: #efc84a;
+}
+/*Напишите нам*/
+.contactUs {
+    width: 960;
+    height: 590;
+    background-color: #efc84a;
+}
+/*Футер*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1200;
+    padding-top: 70px;
+    padding-left: 20px;
+}
+.footer__social {
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-between;
+    width: 260;
+    height: 80;    
+}
+.footer__right {
+    padding-left: 140px;
+    width: 545;
+    height: 60;
+}
