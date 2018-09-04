@@ -32,8 +32,7 @@ a {
 
 .main__header {
     display: flex;
-    justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 49px;
 }
 
 .logo {
@@ -41,33 +40,44 @@ a {
 }
 
 .main__navigation {
-    padding-top: 0;
-    /*margin-left: 200px;*/
-    border: 1px solid black;
-    
+    margin-left: 201px;
+    /*border: 1px solid black;*/   
 }
 
 .site__navigation {
     list-style: none; /*Отменяет маркеры для списка.*/
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
     width: 440px;
 }
 
 .site__navigation li {
-    display: inline; /*элементы списка строчне*/
-    /*padding-right: 48px;*/
+    display: inline-flex; /*элементы списка строчне*/
     list-style-type: none; /*стиль маркера*/
-    
+    padding-top: 26px;
+}
+
+.site__navigation li:nth-child(2),:nth-child(3)  {
+    padding-left: 42px;
+}
+
+.site__navigation li:nth-child(3)  {
+    padding-left: 44px;
+}
+
+.site__navigation li:nth-child(4)  {
+    padding-left: 40px;
 }
 
 .basket {
-    /*margin-top: 10px;*/
+    margin-top: 27px;
+    margin-left: auto;
     margin-right: 20px;
 }
 
-/*.basket>img:nth-child(1) {
-    padding-right: 20px;
-}*/
+.basket>img {
+    margin-right: 20px;
+}
 
 .main__navigation,
 .basket {
