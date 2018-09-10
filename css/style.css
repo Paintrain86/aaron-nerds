@@ -1,9 +1,3 @@
-/*@font-face {
-    font-family: Roboto; /* Имя шрифта */
-    /*src: url("fonts/roboto.woff")  format("woff"); /* Путь к файлу со шрифтом */
-    /*src: url("fonts/roboto.woff2")  format("woff2"); /* Путь к файлу со шрифтом */
-/*   }*/
-
 body {
     margin: 0;
     padding: 0;
@@ -12,26 +6,107 @@ body {
     font-size: 16px; /*размер шрифта*/
     line-height: 24px; /*межстрачный интервал*/
     font-weight: 400; /*400-normal, 700-bold*/
-    color: #283136;
+    color: #283136; /*цвет текста*/
 
     background-color: #ffffff; /*цвет фона*/
+}
+
+html,
+body {
+    min-width: 100%;/*1440px;*/
+    min-height: 100%; /*1925px;*/
 }
 
 a {
     text-decoration: none; /*убираем подчерк. у ссылок*/
 }
 
+.container {
+    width: 1200px;  
+    margin: 0 auto;
+}
+
+.site__navigation,
+.pagination__list,
+.services__list,
+.features,
+.footer__social {
+    list-style-type: none;
+}
+
+.main {
+    background-color: #eeeeee;
+}
+
+.main__title,
+.slideshow__name {
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.main__header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; /*главная ось направлена слева направо*/
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.logo>img:hover {
+    opacity: 0.7;
+}
+
+.logo>img:focus {
+    opacity: 0.5; /* Полупрозрачность элемента */
+}
+
+.site__navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.site__navigation>li {
+    margin-right: 40px;
+}
+
+
+.basket {
+    margin: 0;
+}
+.basket>img {
+    padding-right: 27px;
+}
+
 .main__navigation,
 .basket {
     line-height: 30px; /*межстрочный интервал*/
     font-weight: 700; /*400-normal, 700-bold*/
-    text-transform: uppercase; /*все прописные*/
 
     list-style: none; /*стиль маркера*/
 }
 
+.main__navigation,
+.basket,
+.button,
+.services__title,
+.about__subtitle {
+    text-transform: uppercase; /*все прописные*/
+}
+
 .main__navigation a,
-.basket {
+.main__title,
+.basket,
+.slideshow__name,
+.services__title,
+.about__title,
+.about__subtitle,
+.features__digits,
+.footer__slogan {
     color: #000000;;
 }    
 .main__navigation a:hover,
@@ -50,66 +125,113 @@ a {
     text-decoration: underline; /*подчеркнутый текст*/
 }
 
-.slideshow__name {
-    font-size: 55px;
-    line-height: 55px;
-    color: #000000;
-}
-
-.slideshow__button {
-    width: 240px; /* Ширина первого слоя */
-    height: 50px;
-    padding: 10px; /* Поля вокруг текста */
-    background: #fb565a; /* Цвет фона */
-
-    font-size: 18px; /*размер шрифта*/
-    /*font-weight: 700; /*400-normal, 700-bold*/
+.button {
+    display: inline;
+    font-size: 16px;
+    line-height: 18px;
     color: #ffffff;
+    background-color: #fb565a;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-radius: 4px;
+    text-align: center;
 }
 
-.slideshow__button:hover {
+/*slideshow*/
+.slideshow {
+    background-color: #eeeeee;
+    padding-bottom: 20px;
+    margin-bottom: 18px;
+}
+
+.slideshow__slides-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; /*главная ось направлена слева направо*/
+    align-items: center;
+}
+
+.slideshow__text {
+    margin-bottom: 60px;
+}
+
+.button__slideshow:hover {
     background: #e74246; /* Цвет фона */
 }
 
-.slideshow__button:focus {
+.button__slideshow:focus {
     background: #d7373b; /* Цвет фона */
+}
+
+.slideshow__controls {
+    align-items: center;
+    
+}
+
+.pagination__list {
+    display: flex;
+    justify-content: space-around; /*Flex-элементы выравниваются по главной оси, а свободное место делится поровну, добавляя отступы справа и слева.*/
+    
+    padding: 0;
+    position: absolute;
+	left: 50%;
+    top: 431px;
+    /*bottom: 96px;*/
+	
+    width: 90px;
+    
+}
+
+.pagination__item {
+    list-style: none; /*стиль маркера*/
+
+    background-color: #ffffff;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	position: relative;
+    transition: .3s;
+}
+
+/*.pagination__item-current {
+    background-color: #c2c2c2;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	position: relative;
+    transition: .3s;
+}*/
+
+hr {
+    border: none; /* Убираем границу */
+    background-color: #eeeeee; /* Цвет линии */
+    color: #eeeeee; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+   }
+
+/*Услуги*/
+.services__list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .services__title {
     font-size: 24px;
     line-height: 30px;
-    text-transform: uppercase;
 }
 
-.button {
-    font-size: 16px;
-    line-height: 18px;
-    
-    text-transform: uppercase;
-
-    color: #ffffff;
-}
-.button__site {
-    width: 160px; /* Ширина первого слоя */
-    height: 50px;
-    padding: 10px; /* Поля вокруг текста */
-    background: #fb565a;
-}
-
-.button__site:hover {
-    background: #e74246;
-}
-
-.button__site:focus {
-    background: #d7373b;
+.services__text {
+    padding-bottom: 40px;
 }
 
 .button__apps {
-    width: 160px; /* Ширина первого слоя */
-    height: 50px;
-    padding: 10px; /* Поля вокруг текста */
     background: #00ca74;
 }
+
 .button__apps:hover {
     background: #00bc6c;
 }
@@ -118,171 +240,178 @@ a {
     background: #00aa62;
 }
 
-.button__apps {
-    width: 160px; /* Ширина первого слоя */
-    height: 50px;
-    padding: 10px; /* Поля вокруг текста */
+.button__presentations {
     background: #efc84a;
 }
-.button__apps:hover {
+
+.button__presentations:hover {
     background: #eab534;
 }
 
-.button__apps:focus {
+.button__presentations:focus {
     background: #e5a722;
 }
+/*О компании*/
+.about {  
+    /*padding-top: 40px;*/
+    padding-bottom: 80px;
+}
 
-h1.about__title {
+.about__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__right img {
+    padding-top: 40px;
+}
+
+.about__title {
     font-size: 45px;
     line-height: 45px;
-    text-transform: uppercase;
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
 
-h3.about__title {
-    text-transform: uppercase;
+.about__text li{
+    padding-top: 25px;
 }
 
-b {
-    font-size: 18px;
-    line-height: 30px;
-    text-transform: uppercase;
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
 }
 
-a.adres__button {
-    width: 219px; /* Ширина первого слоя */
-    height: 50px;
-    padding: 10px; /* Поля вокруг текста */
-    background: #fb565a;
+.features__digits {
+    display: inline;
+    font-size: 45px;
+    line-height: 10.06px;
+    font-weight: bold;
+    padding-bottom: 30px;/*не работает отступ!!!*/
+}
 
+.features__digits>sup {
+    font-size: 30px;
+}
+
+/*Партнеры*/
+.partners {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.partners__item>img {
+    opacity: 0.5; /* Полупрозрачность элемента */
+}
+
+.partners__item>img:hover {
+    opacity: 1.0;
+}
+
+.partners__item>img:focus {
+    opacity: 0.1; /* Полупрозрачность элемента */
+}
+
+/*Карта*/
+.map {
+    background: url("../img/map_with_marker.png") no-repeat 0 0;
+    padding: 45px 0;
+    margin-top: 85px;
+}
+
+.map__contacts {
+    width: 319px;
+    height: 308px;
+    background-color: #ffffff;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.map__contacts>h4 {
+    margin-top: 0px;
+}
+
+map__contacts>p::after {
+    padding-bottom: 60px;
+}
+
+/*Футер*/
+
+.footer {
+    display: flex;
     
-    color: #ffffff;
+    padding-top: 70px;
+    margin-bottom: 80px;
 }
 
-a.adres__button:hover {
-    background: #e74246;
+.footer__social {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 130px;
 }
 
-a.adres__button:focus {
-    background: #d7373b;
+.footer__round {
+    margin: auto;
+    margin-right: 10px;
+	background-color: #e1e1e1;
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	position: relative;
+    transition: .3s;
 }
 
-h2.contactUs__title {
-    font-size: 45px;
-    line-height: 45px;
-    font-weight: 700; /*400-normal, 700-bold*/
+.round {   
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	transition: .3s;
 }
 
-p.contactUs__title {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 700; /*400-normal, 700-bold*/
+.footer__round:hover {
+	background-color: #e74246;
 }
 
-a.contactUs-button {
-    width: 260px; /* Ширина первого слоя */
-    height: 50px;
-    padding: 10px; /* Поля вокруг текста */
-    background: #fb565a;
-
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 700; /*400-normal, 700-bold*/
-    color: #ffffff;
+.footer__round:focus {
+	background-color: #d7373b;
 }
 
-a.contactUs-button:hover {
-    background: #e74246;
-}
-
-a.contactUs-button:focus {
-    background: #d7373b;
-}
-
-.footer-slogan {
+.footer__slogan {
     font-size: 36px;
     line-height: 36px;
-    font-weight: 700; /*400-normal, 700-bold*/
+    margin-bottom: 20px;
+    margin: 0px;
 }
 
-.footer-text {
-    font-size: 16px;
+.footer__text {
     line-height: 22px;
+    position: relative;
+    margin-bottom: -15px;
 }
 
-/*INDEX - END*/
-
-/*Catalog - start*/
+/**/
 
 .main__title {
-    font-size: 55px;
-    line-height: 55px;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 123px;
 }
 
-.catalog__sort--title {
-    font-size: 18px;
-    line-height: 18px;
-    text-transform: uppercase;
+.catalog__sort {
+    display: flex;
 }
 
-.catalog__sort--types {
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
+.catalog__list {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.catalog__item--title {
-    font-size: 18px;
-    line-height: 30px;
-    text-transform: uppercase;
+.catalog__item {
+    padding: 40px;
 }
-
-.catalog__item--text {
-    font-size: 16px;
-    line-height: 18px;
-}
-
-.catalog__item--btn {
-    width: 200px; /* Ширина первого слоя */
-    height: 50px;
-    padding: 10px; /* Поля вокруг текста */
-    background: #fb565a;
-
-    font-size: 16px;
-    line-height: 18px;
-    
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-.catalog__item--btn:hover {
-    background: #e74246;
-}
-
-.catalog__item--btn:focus {
-    background: #d7373b;
-}
-
-.filter__title {
-    font-size: 18px;
-    line-height: 30px;
-    text-transform: uppercase;
-}
-
-.filter__blok-inner {
-    font-size: 16px;
-    line-height: 20px;
-
-    color: #283136;
-}
-
-.filter__btn {
-    width: 260px; /* Ширина первого слоя */
-    height: 50px;
-    padding: 5px; /* Поля вокруг текста */
-    background: #eeeeee;
-
-    font-size: 16px;
-    line-height: 18px;
-    
-    text-transform: uppercase;
-    color: #000000;

@@ -6,35 +6,35 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Шапка сайта -->
-    <header class="main-header">
-      <!--container-Это центровщик -->
-      <div class="container">
-        <!-- логотип сайта с размерами -->
-        <a class="logo" href="index.html">
-            <!--http://via.placeholder.com/160x65 -->
-            <img src="img/svg-nerds/nerds-logo.svg" width="160" height="65" alt="Логотип web-студии «Nerd's»">
-        </a>
-        <!-- Навигация по сайту с классом -->
-        <nav class="main__navigation">
-        <!-- Неупорядоченный список -->
-          <ul>
-            <li><a href="Studio.html">Студия</a></li>
-            <li><a href="Clients.html">Клиенты</a></li>
-            <li class="site__navigation--current"><a href="Catalog.html">Магазин</a></li>
-            <li><a href="Contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
-        <a class="basket" href="Basket.html">
-          <img src="img/svg-nerds/cart-icon.svg" width="15" height="15" alt="Корзина">
-          Корзина
-        </a>
-      </div>
-      <h1 class="main__title">Магазин готовых шаблонов</h1>
-    </header>
-    <!-- Шапка сайта -->
+    </head>
+    <body>
+        <!-- Шапка сайта -->
+        <header class="main">
+            <!--container-Это центровщик -->
+            <div class="main__header container">
+                <!-- логотип сайта с размерами -->
+                <a class="logo" href="index.html">
+                    <!--http://via.placeholder.com/160x65 -->
+                    <img src="img/svg-nerds/nerds-logo.svg" width="160" height="65" alt="Логотип web-студии «Nerd's»">
+                </a>
+                <!-- Навигация по сайту с классом -->
+                <nav class="main__navigation">
+                <!-- Неупорядоченный список -->
+                    <ul class="site__navigation">
+                        <li><a href="Studio.html">Студия</a></li>
+                        <li><a href="Clients.html">Клиенты</a></li>
+                        <li class="site__navigation--current"><a href="Catalog.html">Магазин</a></li>
+                        <li><a href="Contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a class="basket" href="Basket.html">
+                    <img src="img/svg-nerds/cart-icon.svg" width="15" height="15" alt="Корзина">
+                    Корзина
+                </a>
+            </div>
+            <h1 class="main__title container">Магазин готовых шаблонов</h1>
+        </header>
+        <!-- Шапка сайта -->
 
     <!--Основное содержимое, тег main с классом container.-->
     <!--каталог-->
@@ -47,14 +47,14 @@
           <div class="catalog__sort">
             <!--<h2 class="visually-hidden">Сортировка</h2>-->
             
-            <h3 class="catalog__sort--title">СОРТИРОВАТЬ:</h3> 
+            <h3 class="sort__title">СОРТИРОВАТЬ:</h3> 
             <!--блок с типом сортировки-->
-            <div class="catalog__sort--types">
+            <div class="sort__types">
               по цене по типу по названию
             </div>
 
             <!--блок с направлением (direction) сортировки-->
-            <div class="catalog__sort--direction">
+            <div class="sort__direction">
               вниз вверх
             </div>
             
@@ -69,7 +69,7 @@
               <div class="catalog__item--info">
                 <h3 class="catalog__item--title">Sedona</h3>
                 <p class="catalog__item--text">Информационный сайт для туристов</p>
-                <a class="catalog__item--btn" href="#">9 900 ₽</a>
+                <a class="button catalog__item--btn" href="#">9 900 ₽</a>
               </div><!--catalog__item-info-->
             </div><!--catalog__item-->
             <!--Sedona-->
@@ -80,7 +80,7 @@
               <div class="catalog__item--info">
                 <h3 class="catalog__item--title">Pink App</h3>
                 <p class="catalog__item--text">Продуктовый лендинг приложения для iOS и Android</p>
-                <b><a class="catalog__item--btn" href="#">9 900 ₽</a></b>
+                <b><a class="button catalog__item--btn" href="#">9 900 ₽</a></b>
               </div><!--catalog__item-info-->
             </div><!--catalog__item-->
             <!--Pink App-->
@@ -91,7 +91,7 @@
               <div class="catalog__item--info">
                 <h3 class="catalog__item--title">Barbershop</h3>
                 <p class="catalog__item--text">Сайт салоны красоты. Для мужчин, да.</p>
-                <b><a class="catalog__item--btn" href="#">9 900 ₽</a></b>
+                <b><a class="button catalog__item--btn" href="#">9 900 ₽</a></b>
               </div><!--catalog__item-info-->
             </div><!--catalog__item-->
             <!--Barbershop-->  
@@ -102,7 +102,7 @@
               <div class="catalog__item--info">
                 <h3 class="catalog__item--title">MISHKA</h3>
                 <p class="catalog__item--text">Интернет-магазин вязаных игрушек</p>
-                <b><a class="catalog__item--btn" href="#">9 900 ₽</a></b>
+                <b><a class="button catalog__item--btn" href="#">9 900 ₽</a></b>
               </div><!--catalog__item-info-->
             </div><!--catalog__item-->
             <!--MISHKA-->  
@@ -113,7 +113,7 @@
               <div class="catalog__item--info">
                 <h3 class="catalog__item--title">A Plus</h3>
                 <p class="catalog__item--text">Лендинг курсов повышения квалификации</p>
-                <b><a class="catalog__item--btn" href="#">9 900 ₽</a></b>
+                <b><a class="button catalog__item--btn" href="#">9 900 ₽</a></b>
               </div><!--catalog__item-info-->
             </div><!--catalog__item-->
             <!--A Plus-->  
@@ -124,7 +124,7 @@
               <div class="catalog__item--info">
                 <h3 class="catalog__item--title">КВАСТ</h3>
                 <p class="catalog__item--text">Лендинг курсов повышения квалификации</p>
-                <b><a class="catalog__item--btn" href="#">9 900 ₽</a></b>
+                <b><a class="button catalog__item--btn" href="#">9 900 ₽</a></b>
               </div><!--catalog__item-info-->
             </div><!--catalog__item-->
             <!--КВАСТ-->  
@@ -144,7 +144,7 @@
             <li class="pagination__item"><a href="#">2</a></li>
             <li class="pagination__item"><a href="#">3</a></li>
             <li class="pagination__item"><a href="#">4</a></li>
-            <li class="pagination__item"><a href="#">Следующая</a></li>
+            <li class="button pagination__item"><a href="#">Следующая</a></li>
           </ul>    
         </div>
         
@@ -217,37 +217,23 @@
           </div>
         </div>
         <!--Особенности -->
-        <button class="filter__btn" type="submit">Показать</button>
+        <button class="button filter__btn" type="submit">Показать</button>
       </form>
     </aside>
     <!--Фильтр товаров-->
     
     <!--Карта -->
-        <section class="map">
-            <h2 class="visually__hidden">Карта</h2>
-            <div>
-              <p align="center" class="center">
-                <!--width="1725" height="808"-->
-                <img src="img/map.png" alt="map">
-              </p>
-              <!--width="231" height="190" -->
-              <img src="img/map-marker.png" alt="map-market">
-            </div>
-      
-            <!--Адрес -->
-            <div class="Address">
-              <h2 class="visually__hidden">Адрес</h2>
-              <b>NЁRDS DESIGN STUDIO</b>
-              <p>191186, Санкт-Петербург, 
-                  ул. Б. Конюшенная, д. 19/8</p>
-                
+    <section class="map">
+      <div class="container">
+          <div class="map__contacts">
+              <h4>NЁRDS DESIGN STUDIO</h4>
+              <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
               <p>тел. +7 (812) 275-75-75</p>
-              <!--button-->
-              <a class="adres__button" href="#">Напишите нам</a>
-            </div>
-            <!--Адрес -->
-          </section>
-          <!--Карта -->
+              <a class="button button__contacts" href="#">Напишите нам</a>
+          </div>
+      </div>
+  </section>       
+    <!--Карта -->
       
           
       
@@ -267,21 +253,48 @@
     </section>
     <!--Напишите нам-->
       
-          <!-- Футер-->
-          <footer class="main-footer">
-            <div class="container">
-              <div>
-                <ul class="footer-social">
-                  <li><a href="#">Вконтакте</a></li>
-                  <li><a href="#">Фейсбук</a></li>
-                  <li><a href="#">Инстаграм</a></li>
-                </ul>
-              </div>
-              <div> 
-                <h2 class="footer-slogan">Давайте дружить, это выгодно!</h2>
-                <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
-              </div>
-            </div>
-          </footer>
+          <!--Футер-->
+    <footer class="container">
+        <div class="footer">
+            <div class="footer__left">
+                <div class="footer__social">
+                    <a href="#" title="Вконтакте" class="footer__round">
+                        <img src="img/svg-nerds/vk-icon.svg" alt="Вконтакте" class="round">
+                    </a>
+                    <a href="#" title="Фейсбук" class="footer__round">
+                        <img src="img/svg-nerds/fb-icon.svg" alt="Фейсбук" class="round">
+                    </a>
+                    <a href="#" title="Инстаграм" class="footer__round">
+                        <img src="img/svg-nerds/insta-icon.svg" alt="Инстаграм" class="round">
+                    </a>
+                </div>
+
+
+                <!--<ul class="footer__social">
+                    <li class="footer__round">
+                        <a href="#" title="Вконтакте">
+                            <img src="img/svg-nerds/vk-icon.svg" alt="Вконтакте" class="round">
+                        </a>
+                    </li>
+                    <li class="footer__round">
+                        <a href="#" title="Фейсбук">
+                            <img src="img/svg-nerds/fb-icon.svg" alt="Фейсбук" class="round">
+                        </a>
+                    </li>
+                    <li class="footer__round">
+                        <a href="#" title="Инстаграм">
+                            <img src="img/svg-nerds/insta-icon.svg" alt="Инстаграм" class="round">
+                        </a>
+                    </li>
+                </ul>-->
+
+            </div><!--footer__left-->
+            <div class="footer__right"> 
+                <h2 class="footer__slogan">Давайте дружить, это выгодно!</h2>
+                <p class="footer__text">Скидка 10% для друзей из социальных сетей.</p>
+            </div><!--footer__right-->    
+        </div><!--footer-->
+    </footer><!--container-->
+    
   </body>
 </html>
